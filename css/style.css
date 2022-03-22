@@ -97,19 +97,24 @@ body{
 #flexbox-container{
     display: flex;
     margin-top: 1px;
+    margin-left: 4%;
     flex-wrap: wrap;
-    
+
     /*border: 1px solid black;*/
 }
 
 .flexbox{
-    height: 12.5em;
-    width: 12.5em;
+    /*height: 12.5em;
+    width: 12.5em;*/
+
+    height: 9.5em;
+    width: 9.5em;
 
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 3%;
 
     border: 1px solid black;
+    border-radius: 5px;
     background-color: aliceblue;
 }
 
@@ -118,7 +123,7 @@ body{
 .flexbox h2 {
     text-align: center;
     font-size: 1em;
-    margin-top: 7.000em; /* se tirar isso, o "item" sobe pro topo junto com o botão*/
+    margin-top: 5.000em; /* se tirar isso, o "item" sobe pro topo junto com o botão*/
 }
 
 .flexbox button:hover{
@@ -129,7 +134,7 @@ body{
 .flexbox button{
     height: 1.950em;
     width: 7.8125em;
-    margin-left: 3.500em;
+    margin-left: 1.900em;
 
     color: white;
     border-radius: 5px;
