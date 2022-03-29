@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+#header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1d1e20;
+}
+
+#logo{
+    height: 40px;
+}
+
+/* MENU */
+#menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#menu ul li a {
+    padding: 4px;
+    color: white;
+}
+
+#menu ul li a:hover{
+    font-weight: bold;
+    color: #1d1e20;
+    border-radius: 3px;
+    background-color: white;
+}

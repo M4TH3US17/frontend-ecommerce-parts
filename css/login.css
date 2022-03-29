@@ -1,0 +1,118 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+#header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1d1e20;
+}
+
+#logo{
+    height: 40px;
+}
+
+/* MENU */
+#menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#menu ul li a {
+    padding: 4px;
+    color: white;
+}
+
+#menu ul li a:hover{
+    font-weight: bold;
+    color: #1d1e20;
+    border-radius: 3px;
+    background-color: white;
+}
+
+/* SEÇÃO 1 */
+#container{
+    margin: 60px auto;
+}
+
+/* SEÇÃO 1 - FlexBox (form) */
+a {
+    margin-left: 42%;
+}
+
+label {
+    margin-left: 29%;
+
+    font-weight: bold;
+}
+
+#flexbox {
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+
+   /* border: 1px solid red; */
+}
+
+#flexbox div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+input {
+    height: 36px;
+    margin-left: 29%;
+    max-width: 300px;
+    font-size: 13px;
+
+    border: 0.5px solid gray;
+    border-radius: 4px;
+}
+
+#btn{
+    height: 30px;
+    cursor: pointer;
+    margin-left: 36%;
+    max-width: 200px;
+    font-size: 0.83em;
+
+    border: 0.5px solid;
+    color: white;
+    background-color: rgb(72, 72, 252);
+}
+
+#btn:hover{
+    background-color: rgb(104, 104, 250);
+}
+
+@media (max-width: 414px) {
+    #btn{
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    input{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    label{
+        margin-left: 0%;
+    }
+
+    a {
+        margin-left: 40px;
+    }
+}

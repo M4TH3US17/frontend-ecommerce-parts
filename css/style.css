@@ -1,144 +1,97 @@
-header{
-    border-radius: 5px;
-    background-color: rgba(61, 6, 49, 0.7);
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+    text-decoration: none;
 }
 
-header:nth-child(1){
-    color: rgb(253, 252, 251);
+#header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1d1e20;
 }
 
-body{
-    background-color: rgb(253, 252, 251);
-}
-/* CABEÇALHO */
-#cabecalho {
-    border: 1px solid black;
-}
-
-#cabecalho:nth-child(1){
-    text-align: center;
+#logo{
+    height: 40px;
 }
 
 /* MENU */
 #menu{
-    height: 2rem;
     display: flex;
-    margin-top: 1px;
-    align-items: center;
+}
+
+#menu ul {
+    display: flex;
     justify-content: space-around;
-
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: rgba(61, 6, 49, 0.7);
+    list-style: none;
 }
 
-/* MENU - COMPONENTES (SELECT E BUTTONS) */
-.menu-flex:nth-child(1){
-    width: 50%;
-    height: 2em;
-    display: flex;
-
-   /*background-color: rgb(8, 8, 8);*/
-}
-
-.menu-flex:nth-child(1) select{
-    width: 12.5em;
-    height: 2.30em;
-    display: flex;
-    flex-basis: 20%;
-    margin-left: 0.5%;
-    text-align: center;
-
-    border-top: 0px;
-    font-weight: bold;
-    border-bottom: 0px;
-    border-radius: 2px;
-    background-color: rgba(229, 188, 220, 0.8);/*rgb(226, 250, 242);*/
-}
-
-.menu-flex:nth-child(1) select:hover{
-    color: white;
-    background-color: rgba(61, 6, 49, 0.8);
-}
-
-/* MENU (filho 2)*/
-.menu-flex:nth-child(2){
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    
-    /*background-color: rgb(255, 94, 0);*/
-}
-
-.menu-flex:nth-child(2) div{
-    height: 60%;
+#menu ul li a {
     padding: 4px;
-    margin-right: 2%;
-
-    /*background-color: aqua;*/
+    color: white;
 }
 
-.link-style{
-    padding: 2px;
-    font-size: 100%;
-
+#menu ul li a:hover{
+    font-weight: bold;
+    color: #1d1e20;
     border-radius: 3px;
-    text-decoration: none;
-    color: rgb(241, 240, 240);
+    background-color: white;
 }
 
-.link-style:hover{
-    background-color: rgba(61, 6, 49, 1)
+/* FLEXBOX 1 (SECTION)*/
+h1 {
+    margin-top: 10px;
+    text-align: center;
 }
 
-/* CORPO */
-#flexbox-container{
-    display: flex;
-    margin-top: 1px;
-    margin-left: 4%;
-    flex-wrap: wrap;
-
-    /*border: 1px solid black;*/
+img {
+    max-width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .flexbox{
-    /*height: 12.5em;
-    width: 12.5em;*/
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
 
-    height: 9.5em;
-    width: 9.5em;
+.flexbox > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    margin-top: 2%;
-    margin-left: 3%;
+    padding: 4px;
 
-    border: 1px solid black;
+    margin: 10px;
+    flex: 1 1 250px;
+
     border-radius: 5px;
-    background-color: aliceblue;
+    border: 0.25px solid black;
+    background-color: #1d1e20;
 }
 
-/* ESTILO CORPO */
-
-.flexbox h2 {
-    text-align: center;
-    font-size: 1em;
-    margin-top: 5.000em; /* se tirar isso, o "item" sobe pro topo junto com o botão*/
+p{
+    padding: 2%;
+    width: 100%;
+    color: #faf88c;
 }
+.flexbox > div button {
+    height:  25px;
+    width: 100%;
 
-.flexbox button:hover{
-    color: white;
-    border: 2px solid black;
-    background-color: rgb(248, 28, 200);
-}
-.flexbox button{
-    height: 1.950em;
-    width: 7.8125em;
-    margin-left: 1.900em;
-
-    color: white;
-    border-radius: 5px;
+    border: 0.95px solid ;
+    cursor: pointer;
+    color: #1d1e20;
     font-weight: bold;
-    border: 1px black solid;
-    background-color: rgb(243, 20, 157);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.flexbox > div button:hover {
+    background-color: rgb(234, 240, 245);
 }
