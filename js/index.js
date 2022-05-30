@@ -48,6 +48,8 @@ function loadProductsInIndex() {
 
 function createCard(product) {
     let card = document.createElement('div');
+    card.classList.add('card');
+
     let img = document.createElement('img');
     let title = document.createElement('p');
     let button = document.createElement('button');
