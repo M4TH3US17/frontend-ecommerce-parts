@@ -1,0 +1,29 @@
+/* MENU */
+#header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1d1e20;
+}
+
+#logo{
+    height: 40px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu a {
+    padding: 4px;
+    color: white;
+    margin-right: 2px;
+}
+
+#menu a:hover{
+    color: #1d1e20;
+    border-radius: 3px;
+    background-color: white;
+}

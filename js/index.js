@@ -53,7 +53,7 @@ function createCard(product) {
     let button = document.createElement('button');
 
     img.setAttribute('src', product.urlImage);
-    img.setAttribute('title', "imagem");
+    img.setAttribute('title', product.nameProduct);
 
     title.innerText = product.nameProduct;
     button.innerText = 'COMPRAR';
