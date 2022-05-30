@@ -61,8 +61,4 @@ input {
     #flexbox{
         width: 70%;
     }
-
-    #flexbox div {
-        width: 100%;
-    }
 }

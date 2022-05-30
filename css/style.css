@@ -11,12 +11,6 @@ h1 {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
 .flexbox{
     display: flex;
     margin: 0 auto;

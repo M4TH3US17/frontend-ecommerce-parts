@@ -3,10 +3,10 @@ const products = [
         1,
         'Raio',
         'https://img.freepik.com/fotos-gratis/novas-rodas-de-liga-leve-em-um-fundo-preto-elegante-e-bonito-autopecas-e-ajuste-automatico_114160-705.jpg?w=740',
-        25.00, 'description', 1, 'Pecas'),
+        37.00, 'description', 1, 'Pecas'),
     productFactory(
         2, 'Pneu de Carro',
-        'https://betoscar.com.br/media/magefan_blog/c/o/comprar_pneus.png', 25.00, 'description', 1, 'Pecas'),
+        'https://betoscar.com.br/media/magefan_blog/c/o/comprar_pneus.png', 29.00, 'description', 1, 'Pecas'),
     productFactory(
         3,
         'Motor', 'https://img.wallpapic-br.com/i4091-731-915/thumb/motor-carros-imagem-de-fundo.jpg', 17.00,
@@ -18,13 +18,13 @@ const products = [
         25.00, 'description', 1, 'Pecas'),
 
     productFactory(5, 'Parachoque Dianteiro Ford Ka 2019', '../img/lobo1.jpg', 
-    0.0, 'description', 2, 'Acessorios'),
+    50.0, 'description', 2, 'Acessorios'),
     productFactory(6, 'Pneu de Carro', 'https://betoscar.com.br/media/magefan_blog/c/o/comprar_pneus.png', 
-    0.0, 'description', 2, 'Acessorios'),
+    20.0, 'description', 2, 'Acessorios'),
     productFactory(7, 'Motor', 'https://img.wallpapic-br.com/i4091-731-915/thumb/motor-carros-imagem-de-fundo.jpg', 
-    0.0, 'description', 2, 'Acessorios'),
+    70.0, 'description', 2, 'Acessorios'),
     productFactory(8, 'Legenda', '../img/lobo1.jpg', 
-    0.0, 'description', 2, 'Acessorios')
+    80.0, 'description', 2, 'Acessorios')
 ];
 
 function loadProductsInIndex() {
@@ -48,20 +48,26 @@ function loadProductsInIndex() {
 
 function createCard(product) {
     let card = document.createElement('div');
-    card.classList.add('card');
-
+    let title = document.createElement('h2');
     let img = document.createElement('img');
-    let title = document.createElement('p');
+    let description = document.createElement('p');
     let button = document.createElement('button');
+
+    card.classList.add('card');
+    img.classList.add('card-image');
+    title.classList.add('card-title');
+    description.classList.add('card-description');
 
     img.setAttribute('src', product.urlImage);
     img.setAttribute('title', product.nameProduct);
 
     title.innerText = product.nameProduct;
+    description.innerText = `R$ ${product.price.toFixed(2)} | ${product.nameProduct} | ${product.description}`;
     button.innerText = 'COMPRAR';
 
     card.appendChild(img);
     card.appendChild(title);
+    card.appendChild(description);
     card.appendChild(button);
 
     return card;
